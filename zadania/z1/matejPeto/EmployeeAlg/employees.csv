@@ -1,0 +1,51 @@
+name, surname, idNumber, gender, age, type, numOfEmployers, yearsOfExperience, subjects, street, houseNumber, city, district, country
+Michael, Abbey, 122-762-4523, MALE, 18, EXTERNAL_WORKER, 5, 12, BIOLOGY MATHEMATICS PHYSICS, Tottenham Court Road, 23, London, Greater London, United Kingdom
+John, Malkovich, 118-256-8898, MALE, 21, EXTERNAL_WORKER, 3, 3, INFORMATICS, Zelenogradskaya Street, 13, Moscow, Central Federal District, Russia
+Yuriy, Gorbanovski, 119-853-5634, MALE, 22, EXTERNAL_WORKER, 4, 8, BIOLOGY HISTORY, Pushkinskaya Street, 21, Rostov, Southern Federal District, Russia
+Mikhail, Magduskin, 145-873-4563, MALE, 43, TEACHER, 2, 25, HISTORY CIVICS, Varvarka Street, 48, Moscow, Central Federal District, Russia
+John, White, 235-428-1278, MALE, 28, TEACHER, 5, 7, BIOLOGY HISTORY, Totenham Street, 22, Glasgow, Strathclyde, United Kingdom
+Michaela, Strnavska, 456-237-5693, FEMALE, 35, TEACHER, 8, 10, ART MUSIC, Skultetyho, 28, Bratislava, Bratislavsky kraj, Slovakia
+Edward, Smith, 789-125-1236, MALE, 48, TEACHER, 10, 22, CIVICS, Wall Street, 2, New York City, New York, United States
+Michael, Gatesby, 456-128-1245, MALE, 35, TEACHER, 5, 15, HISTORY ART, Bool Street, 14, New York CIty, New York, United States
+Valto, Mann, 128-483-4596, MALE, 28, TEACHER, 3, 10, ENGLISH SPANISH, Workoninov Street, 15, Talinn, Harju, Estonia
+Mike, Gertz, 128-453-1248, MALE, 35, TEACHER, 2, 12, PHYSICS, Workoninov Street, 14, Talinn, Harju, Estonia
+Alexis, Abbey, 122-785-4523, FEMALE, 45, PEDAGOGUE, 3, 10, MATHEMATICS PHYSICS BIOLOGY CHEMISTRY, California Street, 22, San Francisco, California, United States
+Ashley, Ackerman, 122-852-7852, FEMALE, 48, PEDAGOGUE, 3, 12, MATHEMATICS ENGLISH BIOLOGY, Grant Avenue, 23, San Francisco, California, United States
+Beverly, Barnes, 122-458-3254, FEMALE, 56, PEDAGOGUE, 3, 13, INFORMATICS PHYSICS, Market Street, 48, San Francisco, California, United States
+Evelyn, Bond, 122-364-8965, FEMALE, 47, PEDAGOGUE, 3, 14, CHEMISTRY, Van Ness Avenue, 26, San Francisco, California, United States
+Kelly, Jordan, 122-785-7854, FEMALE, 48, PEDAGOGUE, 2, 14, ENGLISH SPANISH, Kearny Street, 34, San Francisco, California, United States
+Robin, Botwright, 122-785-5263, MALE, 43, DOCENT, 4, 14, ENGLISH SPANISH FRENCH, Mission Street, 36, San Francisco, California, United States
+Dale, Clark, 122-692-7852, MALE, 38, DOCENT, 5, 16, ENGLISH RUSSIAN FRENCH, Polk Street, 47, San Francisco, California, United States
+Tuck, David, 122-762-4563, MALE, 42, DOCENT, 3, 17, MATHEMATICS BIOLOGY CHEMISTRY, Stockton Street, 53, San Francisco, California, United States
+William, Chase, 122-785-7832, MALE, 46, DOCENT, 4, 17, PHYSICS MATHEMATICS, Union Street, 89, San Francisco, California, United States
+Marcus, Fenn, 122-456-7524, MALE, 49, DOCENT, 2, 23, PHYSICS, Filbert Street, 103, San Francisco, California, United States
+Jackson, Smith, 433-618-7645, MALE, 30, PROFESSOR, 3, 12, MATHEMATICS PHYSICS, Vermont Street, 12, San Francisco, California, United States
+Aiden, Johnson, 804-735-7355, MALE, 41, PROFESSOR, 4, 13, MATHEMATICS CHEMISTRY, Vermont Street, 13, San Francisco, California, United States
+Liam, Williams, 459-811-2369, MALE, 42, PROFESSOR, 5, 5, MATHEMATICS PHYSICS, Vermont Street, 14, San Francisco, California, United States
+Lucas, Brown, 874-995-7098, MALE, 43, PROFESSOR, 3, 12, MATHEMATICS CHEMISTRY, Vermont Street, 15, San Francisco, California, United States
+Noah, Jones, 689-577-9899, MALE, 44, PROFESSOR, 4, 12, MATHEMATICS PHYSICS CHEMISTRY, Vermont Street, 15, San Francisco, California, United States 
+Mason, Miller, 225-473-7861, MALE, 45, PROFESSOR, 5, 13, MATHEMATICS CHEMISTRY, Vermont Street, 16, San Francisco, California, United States
+Ethan, Davis, 461-762-7438, MALE, 46, PROFESSOR, 3, 14, MATHEMATICS PHYSICS CHEMISTRY, Vermont Street, 17, San Francisco, California, United States 
+Caden, Garcia, 236-188-8345, MALE, 47, PROFESSOR, 4, 15, MATHEMATICS CHEMISTRY, Vermont Street, 18, San Francisco, California, United States
+Jacob, Rodriguez, 690-523-1878, MALE, 48, PROFESSOR, 5, 16, MATHEMATICS PHYSICS, Vermont Street, 19, San Francisco, California, United States
+Logan, Wilson, 755-711-1704, MALE, 49, PROFESSOR, 3, 16, MATHEMATICS BIOLOGY, Vermont Street, 20, San Francisco, California, United States
+Jayden, Martinez, 449-218-2215, MALE, 49, PROFESSOR, 4, 17, MATHEMATICS PHYSICS, Vermont Street, 21, San Francisco, California, United States 
+Elijah, Anderson, 444-323-1528, MALE, 48, PROFESSOR, 5, 20, MATHEMATICS BIOLOGY, Vermont Street, 22, San Francisco, California, United States
+Jack, Taylor, 503-252-7049, MALE, 47, PROFESSOR, 3, 10, MATHEMATICS PHYSICS BIOLOGY, Vermont Street, 23, San Francisco, California, United States 
+Luke, Thomas, 173-260-4321, MALE, 49, PROFESSOR, 4, 10, MATHEMATICS BIOLOGY, Vermont Street, 24, San Francisco, California, United States
+Michael, Hernandez, 557-627-6007, MALE, 30, PROFESSOR, 5, 10, MATHEMATICS PHYSICS, Vermont Street, 25, San Francisco, California, United States 
+Benjamin, Scott, 692-444-7632, MALE, 31, PROFESSOR, 3, 10, MATHEMATICS BIOLOGY, Vermont Street, 26, San Francisco, California, United States
+Alexander, Nelson, 496-873-2178, MALE, 41, PROFESSOR, 4, 10, MATHEMATICS BIOLOGY, Vermont Street, 27, San Francisco, California, United States
+James, Campbell, 449-782-9219, MALE, 43, PROFESSOR, 5, 10, MATHEMATICS BIOLOGY, Vermont Street, 28, San Francisco, California, United States
+Jayce, Hill, 520-515-2210, MALE, 35, PROFESSOR, 3, 10, MATHEMATICS BIOLOGY, Vermont Street, 29, San Francisco, California, United States
+Caleb, Turner, 983-959-1084, MALE, 32, PROFESSOR, 4, 12, MATHEMATICS CHEMISTRY, Vermont Street, 30, San Francisco, California, United States 
+Connor, Forest, 983-959-1083, MALE, 35, EXTERNAL_WORKER, 3, 10, ENGLISH CHEMISTRY, Junipero Serra Boulevard, 12, San Francisco, California, United States
+William, Fishman, 983-959-1082, MALE, 35, EXTERNAL_WORKER, 3, 10, ENGLISH CHEMISTRY, Junipero Serra Boulevard, 45, San Francisco, California, United States
+Carter, Forester, 983-959-1081, MALE, 35, TEACHER, 3, 10, ENGLISH CHEMISTRY, Junipero Serra Boulevard, 23, San Francisco, California, United States
+Ryan, Ford, 983-959-1080, MALE, 35, TEACHER, 3, 10, ENGLISH CHEMISTRY, Junipero Serra Boulevard, 23, San Francisco, California, United States
+Oliver, Fox, 983-959-1079, MALE, 35, TEACHER, 3, 10, ENGLISH PHYSICS, Junipero Serra Boulevard, 48, San Francisco, California, United States
+Matthew, Francis, 983-959-1085, MALE, 35, TEACHER, 3, 10, ENGLISH PHYSICS, Junipero Serra Boulevard, 26, San Francisco, California, United States
+Daniel, Garret, 983-959-1032, MALE, 35, PEDAGOGUE, 3, 10, ENGLISH RUSSIAN ART, Junipero Serra Boulevard, 36, San Francisco, California, United States
+Gabriel, Gilbert, 983-959-1034, MALE, 35, PEDAGOGUE, 3, 10, ENGLISH RUSSIAN CIVICS, Junipero Serra Boulevard, 45, San Francisco, California, United States
+Henry, Gilliam, 983-959-1455, MALE, 35, DOCENT, 3, 10, ENGLISH BIOLOGY, Junipero Serra Boulevard, 78, San Francisco, California, United States
+Owen, Greene, 983-959-9645, MALE, 35, DOCENT, 3, 10, ENGLISH BIOLOGY SPANISH, Junipero Serra Boulevard, 36, San Francisco, California, United States

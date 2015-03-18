@@ -1,0 +1,4 @@
+
+public enum WorkType {
+	EXTERNAL_WORKER, TEACHER, PEDAGOGUE, DOCENT, PROFESSOR;
+}
