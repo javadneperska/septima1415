@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+
 public class Main {
 	public static final String ip = "192.168.1.48";
 	private static ArrayList<Employee> CUSTARR= new ArrayList<Employee>();
@@ -16,21 +17,7 @@ public class Main {
 			ResultSet msg = mysql.printEmployees("employee");
 			while (msg.next()){
 				String[] teachingSubjects = msg.getString("teachingSubjects").split(",");
-				switch(msg.getString("expertiese")){
-				case "profesor":
-					type = type.PROFESOR;
-					break;
-				case "docent":
-					type = type.DOCENT;
-					break;
-				case "teacher" :
-					type= type.TEACHER;
-				case "external" :
-					type= type.EXTERNAL;
-				case "peadagogue" :
-					type= type.PEDAGOGUE;	
-				
-				}
+				type = Utilities.getType(msg.getString("expertiese"));
 				CUSTARR.add(new Employee(msg.getString("name"), msg.getString("surname"), msg.getString("birthNum"), msg.getBoolean("gender"), msg.getInt("lastJobs"), msg.getInt("experienceYears"), teachingSubjects, msg.getInt("age"), msg.getString("city"), msg.getString("country"), msg.getString("district"), msg.getInt("houseNum"), msg.getString("street"), type));
 			}
 			
