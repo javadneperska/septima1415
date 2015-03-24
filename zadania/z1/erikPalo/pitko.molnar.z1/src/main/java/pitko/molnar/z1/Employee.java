@@ -10,11 +10,12 @@ public class Employee {
 	private int expYears;
 	private String teachingSubjects;
 	private int age;
+	private Address address;
 	
 	
 	public Employee(String name, String surname, String birthNum,
 			boolean gender, String expertise, int lastJobs, int expYears,
-			String teachingSubjects, int age) {
+			String teachingSubjects, int age, String city) {
 		super();
 		this.name = name;
 		this.surname = surname;
@@ -25,6 +26,7 @@ public class Employee {
 		this.expYears = expYears;
 		this.teachingSubjects = teachingSubjects;
 		this.age = age;
+		this.address.setCity(city);
 	}
 
 	
