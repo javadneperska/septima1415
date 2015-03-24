@@ -21,6 +21,10 @@ public class Address {
 		return city;
 	}
 
+	@Override public String toString() {
+		return "Address [Country=" + country + ", City=" + city + ", Street=" + street + ", House number=" + houseNumber + "]";
+	}
+
 	public String getStreet() {
 		return street;
 	}
