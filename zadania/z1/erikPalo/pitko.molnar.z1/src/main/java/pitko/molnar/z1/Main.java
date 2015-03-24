@@ -1,5 +1,6 @@
 package pitko.molnar.z1;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class Main {
@@ -9,6 +10,9 @@ public class Main {
 		try {
 			Mysql mysql = new Mysql();
 			mysql.printEmployees("employee");
+			ResultSet msg = mysql.printEmployees("employee");
+			
+			
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
