@@ -19,6 +19,10 @@ public class Emploee {
 		this.info = extraInfo;
 	}
 
+	@Override public String toString() {
+		return "Emploee [Name=" + name + ", Surname=" + surname + ", Social security number=" + socialSecurityNumber + ", Is woman=" + isWoman + ", Address=" + address + ", Type of emploee=" + type + ", Extra info=" + info + "]";
+	}
+
 	public String getName() {
 		return name;
 	}

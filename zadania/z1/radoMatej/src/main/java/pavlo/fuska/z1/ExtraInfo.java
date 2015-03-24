@@ -1,5 +1,7 @@
 package pavlo.fuska.z1;
 
+import java.util.Arrays;
+
 public class ExtraInfo {
 	final int pastJobs;
 	final int yearsOfPractice;
@@ -13,7 +15,11 @@ public class ExtraInfo {
 		this.age = age;
 	}
 
-	public int getPastJobs() {
+	@Override public String toString() {
+		return "ExtraInfo [Number of past jobs=" + pastJobs + ", Years of practice=" + yearsOfPractice + ", Subjects=" + Arrays.toString(subjects) + ", Age=" + age + "]";
+	}
+
+	public int getNumberOfPastJobs() {
 		return pastJobs;
 	}
 

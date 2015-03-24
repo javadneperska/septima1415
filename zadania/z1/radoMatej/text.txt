@@ -1,7 +1,7 @@
-Jozko; Mrkvicka; 570421/9338; Muz; Butonova 16; Kosice; Kosice 1; Slovensko; Docent; 1 zamestnavatel; 3 roky praxe; INF; BIO; 3 roky zamestnany
-Anton; Gorotka; 850908/9534; Muz; Okonova 25; Bratislava; Bratislava 2; Slovensko; Ucitel; 2 zamestnavatelia; 5 rokov praxe; CHE; TSV; 2 roky zamestnany
-Gertruda; Homolova; 855908/9539; Zena; Lomena 25; Kosice; Kosice 3; Slovensko; Docentka; 1 zamestnavatel; 6 rokov praxe; MAT; 6 rokov zamestnana
-Antonia; Holoturiova; 795945/9539; Zena; Trnavska 11; Trnava; Trnava 1; Slovensko; Pedagog; 2 zemstnavatelia; 7 rokov praxe; OBN; 4 roky zamestnana
-Julia; Torova; 855945/9539; Zena; Trnavska 5; Trnava; Trnava 1; Slovensko; Ucitelka; 1 zamestnanie; 2 roky praxe; MAT; GEO; 2 roky zamestnana
-Horacio; Horvath; 640807/9531; Muz; Trieda SNP; Kosice; Kosice 1; Slovensko; Profesor; 2 zmestnavatelia; 11 rokov praxe; MAT; FYZ; 6 rokov zamestnany 
-Pearl; Harbour; 512985/2150; Zena; Tonova 2; Kosice; Kosice 3; Slovensko; Externa pracovnicka; 1 rok praxe; CHE; 0 rokov zamestnana
+Jozko;Mrkvicka;570421/9338;Muz;Butonova;16;Kosice;Slovensko;Docent;1;33;GEO,BIO;3
+Anton;Gorotka;850908/9534;Muz;Okonova;25;Bratislava;Slovensko;Ucitel;2;35;CHE,FYZ;2
+Gertruda;Homolova;855908/9539;Zena;Lomena;25;Kosice;Slovensko;Docent;1;36;MAT;6
+Antonia;Holoturiova;795945/9539;Zena;Trnavska;11;Trnava;Slovensko;Pedagog;2;37;FYZ;4
+Julia;Torova;855945/9539;Zena;Trnavska;5;Trnava;Slovensko;Ucitel;1;32;MAT,GEO;2
+Horacio;Horvath;640807/9531;Muz;Trieda SNP;1;Kosice;Slovensko;Profesor;2;21;MAT,FYZ;6
+Pearl;Harbour;512985/2150;Zena;Tonova;2;Kosice;Slovensko;Externy;3;31;CHE;0

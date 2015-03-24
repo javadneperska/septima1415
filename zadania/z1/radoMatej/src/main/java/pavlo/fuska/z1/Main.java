@@ -1,23 +1,26 @@
 package pavlo.fuska.z1;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
+import java.io.File;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 public class Main {
+	public static void main(String[] args) {
+		ArrayList<Emploee> emploees;
+		File f = new File("text.txt");
 
-	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
-
-		FileInputStream fis = new FileInputStream("text.txt");
-		BufferedReader br = new BufferedReader(new InputStreamReader(fis));
-
-		String line = null;
-		while((line = br.readLine()) != null) {
-			System.out.println(line);
+		try {
+			emploees = FileUtils.ParseFile(f);
+		} catch(IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return;
 		}
-		br.close();
-	}
 
+		if(emploees.size() == 0)
+			System.out.println("Empty file");
+		else
+			for(Emploee em : emploees)
+				System.out.println(em.toString());
+	}
 }
