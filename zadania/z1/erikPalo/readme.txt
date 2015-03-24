@@ -1,2 +1,1 @@
-ja som palko
-trololol
+pls
