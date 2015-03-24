@@ -15,14 +15,14 @@ public class Employee {
 	
 	
 	public Employee(String name, String surname, String birthNum,
-			boolean gender, String expertise, int lastJobs, int expYears,
+			boolean gender, int lastJobs, int expYears,
 			String[] teachingSubjects, int age, String city, String country, String district, int houseNum, String street, Type type) {
 		super();
 		this.name = name;
 		this.surname = surname;
 		this.birthNum = birthNum;
 		this.gender = gender;
-		this.expertise = expertise;
+		this.type = type;
 		this.lastJobs = lastJobs;
 		this.expYears = expYears;
 		this.teachingSubjects = teachingSubjects;
@@ -32,7 +32,6 @@ public class Employee {
 		this.address.setDistrict(district);
 		this.address.setHouseNum(houseNum);
 		this.address.setStreet(street);
-		this.type = type;
 	}
 
 	
