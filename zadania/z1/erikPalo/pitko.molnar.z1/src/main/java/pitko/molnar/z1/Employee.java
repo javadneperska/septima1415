@@ -5,11 +5,6 @@ public class Employee {
 	private String surname;
 	private String birthNum;
 	private boolean gender;
-	private String street;
-	private int houseNum;
-	private String city;
-	private String district;
-	private String country;
 	private String expertise;
 	private int lastJobs;
 	private int expYears;
