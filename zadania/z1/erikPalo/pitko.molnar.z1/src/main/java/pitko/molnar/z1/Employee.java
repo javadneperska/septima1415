@@ -3,6 +3,7 @@ package pitko.molnar.z1;
 import java.util.Arrays;
 
 public class Employee {
+	public static int max = 0;
 	private String name;
 	private String surname;
 	private String birthNum;
@@ -32,8 +33,18 @@ public class Employee {
 		Address.district = district;
 		Address.houseNum = houseNum;
 		Address.street = street;
+		for (String k : teachingSubjects){
+			max++;
+		}
 	}
 
+	public Type getExpertise(){
+		return expertise;
+	}
+	
+	public String[] getSubjects(){
+		return teachingSubjects;
+	}
 
 	@Override
 	public String toString() {

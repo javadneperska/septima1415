@@ -11,7 +11,7 @@ public class Utilities {
 		case "teacher":
 			return Type.TEACHER;
 		case "external":
-			return Type.EXTERNAL;
+			return Type.EXTERNIST;
 		case "peadagogue":
 			return Type.PEDAGOGUE;
 
@@ -22,5 +22,14 @@ public class Utilities {
 			return null;
 		}
 	}
+	public final static Subjects getSubject(final String input) {
+		String temp = input.trim().toLowerCase();
+			for (Subjects k : Subjects.values())
+				if (temp.equalsIgnoreCase(k.name()))
+					return k;
+			return null;
+	}
+	
+	
 
 }
