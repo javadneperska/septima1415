@@ -11,7 +11,7 @@ public class Employee {
 	private String teachingSubjects;
 	private int age;
 	private Address address;
-	Type type;
+	private Type type;
 	
 	
 	public Employee(String name, String surname, String birthNum,
