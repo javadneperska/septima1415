@@ -8,7 +8,7 @@ public class Employee {
 	private String expertise;
 	private int lastJobs;
 	private int expYears;
-	private String teachingSubjects;
+	private String[] teachingSubjects;
 	private int age;
 	private Address address;
 	private Type type;
@@ -16,7 +16,7 @@ public class Employee {
 	
 	public Employee(String name, String surname, String birthNum,
 			boolean gender, String expertise, int lastJobs, int expYears,
-			String teachingSubjects, int age, String city, String country, String district, int houseNum, String street, Type type) {
+			String[] teachingSubjects, int age, String city, String country, String district, int houseNum, String street, Type type) {
 		super();
 		this.name = name;
 		this.surname = surname;
