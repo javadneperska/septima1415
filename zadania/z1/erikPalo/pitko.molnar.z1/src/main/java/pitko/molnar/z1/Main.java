@@ -23,7 +23,14 @@ public class Main {
 				case "docent":
 					type = type.DOCENT;
 					break;
-			}
+				case "teacher" :
+					type= type.TEACHER;
+				case "external" :
+					type= type.EXTERNAL;
+				case "peadagogue" :
+					type= type.PEDAGOGUE;	
+				
+				}
 				CUSTARR.add(new Employee(msg.getString("name"), msg.getString("surname"), msg.getString("birthNum"), msg.getBoolean("gender"), msg.getInt("lastJobs"), msg.getInt("experienceYears"), teachingSubjects, msg.getInt("age"), msg.getString("city"), msg.getString("country"), msg.getString("district"), msg.getInt("houseNum"), msg.getString("street"), type));
 			}
 			
