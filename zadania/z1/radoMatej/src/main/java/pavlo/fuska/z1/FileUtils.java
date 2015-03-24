@@ -33,7 +33,7 @@ public final class FileUtils {
 			throw new ParseException("Not enough parameters", line.length() - 1);
 
 		Address address = new Address(Integer.parseInt(arr[5]), arr[4], arr[6], arr[7]);
-		ExtraInfo extraInfo = new ExtraInfo(ParseSubjects(arr[11]), Integer.parseInt(arr[9]), Integer.parseInt(arr[10]), Integer.parseInt(arr[12]));
+		ExtraInfo extraInfo = new ExtraInfo(ParseSubjects(arr[11]), Integer.parseInt(arr[9]), Integer.parseInt(arr[12]), Integer.parseInt(arr[10]));
 		return new Emploee(arr[0], arr[1], arr[2], !arr[3].toLowerCase().startsWith("m"), address, EmploeeType.GetType(arr[8]), extraInfo);
 	}
 
