@@ -1,5 +1,7 @@
 package pitko.molnar.z1;
 
+import java.util.Arrays;
+
 public class Employee {
 	private String name;
 	private String surname;
@@ -10,7 +12,6 @@ public class Employee {
 	private int expYears;
 	private String[] teachingSubjects;
 	private int age;
-	private Address address;
 	private Type type;
 	
 	
@@ -27,11 +28,18 @@ public class Employee {
 		this.expYears = expYears;
 		this.teachingSubjects = teachingSubjects;
 		this.age = age;
-		this.address.setCity(city);
-		this.address.setCountry(country);
-		this.address.setDistrict(district);
-		this.address.setHouseNum(houseNum);
-		this.address.setStreet(street);
+		Address.country = country;
+		Address.city = city;
+		Address.district = district;
+		Address.houseNum = houseNum;
+		Address.street = street;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Employee [name=" + name + ", surname=" + surname + ", birthNum=" + birthNum + ", gender=" + gender + ", expertise=" + expertise + ", lastJobs=" + lastJobs + ", expYears=" + expYears + ", teachingSubjects=" + Arrays
+				.toString(teachingSubjects) + ", age=" + age + ", type=" + type + "]";
 	}
 
 	

@@ -16,7 +16,7 @@ public class Mysql {
 
 	public Mysql() throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
-		con = DriverManager.getConnection("jdbc:mysql://"+ Main.ip + "/irc", "kosec", "kondor");
+		con = DriverManager.getConnection("jdbc:mysql://"+ Main.ip + "/students", "guest", "guest");
 		st = con.createStatement();
 	}
 	
