@@ -7,12 +7,11 @@ public class Employee {
 	private String surname;
 	private String birthNum;
 	private boolean gender;
-	private String expertise;
+	private Type expertise;
 	private int lastJobs;
 	private int expYears;
 	private String[] teachingSubjects;
 	private int age;
-	private Type type;
 	
 	
 	public Employee(String name, String surname, String birthNum,
@@ -23,7 +22,7 @@ public class Employee {
 		this.surname = surname;
 		this.birthNum = birthNum;
 		this.gender = gender;
-		this.type = type;
+		this.expertise = type;
 		this.lastJobs = lastJobs;
 		this.expYears = expYears;
 		this.teachingSubjects = teachingSubjects;
@@ -39,7 +38,7 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "Employee [name=" + name + ", surname=" + surname + ", birthNum=" + birthNum + ", gender=" + gender + ", expertise=" + expertise + ", lastJobs=" + lastJobs + ", expYears=" + expYears + ", teachingSubjects=" + Arrays
-				.toString(teachingSubjects) + ", age=" + age + ", type=" + type + "]";
+				.toString(teachingSubjects) + ", age=" + age + "]";
 	}
 
 	

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Main {
 	public static final String ip = "192.168.1.48";
 	private static ArrayList<Employee> CUSTARR= new ArrayList<Employee>();
-	private static Type type;
+	private static Type expertise;
 
 	public static void main(String[] args) {
 		try {
@@ -18,8 +18,12 @@ public class Main {
 			while (msg.next()){
 				System.out.println(msg.getString("city"));
 				String[] teachingSubjects = msg.getString("teachingSubjects").split(",");
-				type = Utilities.getType(msg.getString("expertiese"));
-				CUSTARR.add(new Employee(msg.getString("name"), msg.getString("surname"), msg.getString("birthNum"), msg.getBoolean("gender"), msg.getInt("lastJobs"), msg.getInt("experienceYears"), teachingSubjects, msg.getInt("age"), msg.getString("city"), msg.getString("country"), msg.getString("district"), msg.getInt("houseNum"), msg.getString("street"), type));
+				expertise = Utilities.getType(msg.getString("expertiese"));
+				if (expertise != null){
+					CUSTARR.add(new Employee(msg.getString("name"), msg.getString("surname"), msg.getString("birthNum"), msg.getBoolean("gender"), msg.getInt("lastJobs"), msg.getInt("experienceYears"), teachingSubjects, msg.getInt("age"), msg.getString("city"), msg.getString("country"), msg.getString("district"), msg.getInt("houseNum"), msg.getString("street"), expertise));					
+				}else{
+					System.out.println("Employee");
+				}
 			}
 			for (int i = 0; i<CUSTARR.size(); i++){
 				System.out.println(CUSTARR.get(i).toString());
