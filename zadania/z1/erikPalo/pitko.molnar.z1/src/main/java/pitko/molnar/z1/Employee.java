@@ -50,7 +50,7 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		return "Employee [name=" + name + ", surname=" + surname + ", birthNum=" + birthNum + ", gender=" + gender + ", expertise=" + expertise + ", lastJobs=" + lastJobs + ", expYears=" + expYears + ", teachingSubjects=" + Arrays
+		return "Employee [name=" + name + ", surname=" + surname + ", birthNum=" + birthNum + ", gender=" + ((gender) ? "male":"female") + ", expertise=" + expertise + ", lastJobs=" + lastJobs + ", expYears=" + expYears + ", teachingSubjects=" + Arrays
 				.toString(teachingSubjects) + ", age=" + age + "]";
 	}
 

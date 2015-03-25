@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Hashtable;
 
 public class Main {
-	public static final String ip = "192.168.1.48";
+	public static final String ip = "88.212.33.75";
 	private static ArrayList<Employee> CUSTARR = new ArrayList<Employee>();
 	private static Hashtable<Type, SubjEmp> TABLE= new Hashtable<Type, SubjEmp>();	
 	// SubjEmp>();
@@ -102,7 +102,6 @@ public class Main {
 					System.out.println(Subject.CZECH + " : " + TABLE.get(k).cze);
 					System.out.println(Subject.ENGLISH + " : " + TABLE.get(k).eng);
 					System.out.println(Subject.MATH + " : " + TABLE.get(k).math);
-					System.out.println("favorite subject: " + TABLE.get(k).max());
 					if (TABLE.get(k).bio == TABLE.get(k).max()){
 						System.out.println("favourite: " + Subject.BIOGRAPHY);
 					}
