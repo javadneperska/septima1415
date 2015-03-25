@@ -15,15 +15,17 @@ public class Employee {
 	private int age;
 	
 	
+	
+	
 	public Employee(String name, String surname, String birthNum,
 			boolean gender, int lastJobs, int expYears,
-			String[] teachingSubjects, int age, String city, String country, String district, int houseNum, String street, Type type) {
+			String[] teachingSubjects, int age, String city, String country, String district, int houseNum, String street, Type expertiese) {
 		super();
 		this.name = name;
 		this.surname = surname;
 		this.birthNum = birthNum;
 		this.gender = gender;
-		this.expertise = type;
+		this.expertise = expertiese;
 		this.lastJobs = lastJobs;
 		this.expYears = expYears;
 		this.teachingSubjects = teachingSubjects;

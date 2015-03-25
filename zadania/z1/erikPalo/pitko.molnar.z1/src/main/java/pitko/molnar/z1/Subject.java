@@ -1,6 +1,6 @@
 package pitko.molnar.z1;
 
-public enum Subjects {
+public enum Subject {
 	BIOGRAPHY,
 	ENGLISH,
 	MATH,

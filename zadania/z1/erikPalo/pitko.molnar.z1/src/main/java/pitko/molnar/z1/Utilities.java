@@ -22,9 +22,9 @@ public class Utilities {
 			return null;
 		}
 	}
-	public final static Subjects getSubject(final String input) {
+	public final static Subject getSubject(final String input) {
 		String temp = input.trim().toLowerCase();
-			for (Subjects k : Subjects.values())
+			for (Subject k : Subject.values())
 				if (temp.equalsIgnoreCase(k.name()))
 					return k;
 			return null;
