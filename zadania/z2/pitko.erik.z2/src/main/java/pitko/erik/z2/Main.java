@@ -8,6 +8,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		ArrayList<Integer> arr = new ArrayList<Integer>();
+		ArrayList<Integer> arr2 = new ArrayList<Integer>();
 		Integer[] x = new Integer[MAX];
 		long start;
 
@@ -18,6 +19,8 @@ public class Main {
 		}
 		Utils.sum(x);
 		System.out.println("int[] without gc: " + (double) (System.currentTimeMillis() - start) / 1000);
+		x = null;
+		System.gc();
 
 		Integer[] y = new Integer[MAX];
 
@@ -36,14 +39,15 @@ public class Main {
 		}
 		Utils.sum(arr);
 		System.out.println("arraylist without gc: " + (double) (System.currentTimeMillis() - start) / 1000);
-		arr.clear();
+		arr = null;
+		System.gc();
 
 		start = System.currentTimeMillis();
 		for (int i = 0; i < MAX; i++) {
-			arr.add(i);
+			arr2.add(i);
 		}
-		Utils.sum(arr);
-		arr = null;
+		Utils.sum(arr2);
+		arr2 = null;
 		System.gc();
 		System.out.println("arraylist with gc: " + (double) (System.currentTimeMillis() - start) / 1000);
 
