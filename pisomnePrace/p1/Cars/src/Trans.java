@@ -2,28 +2,19 @@ import java.util.Date;
 
 public class Trans {
 
-	private Types type = Types.PERSONAL;
+	private Types type;
 	private double km;
-	private Date yom;
+	private int yom;
 	private int aveLife;
-	private int vin;
+	private String vin;
 	private int wheels;
 	private boolean hitch;
 	private boolean people;
 
-	public Trans(String type, double km, Date yom, int aveLife, int vin,
-			int wheels, boolean hitch, boolean people) throws Exception {
+	public Trans(Types type, double km, int yom, int aveLife, String vin,
+			int wheels, boolean hitch, boolean people){
 		super();
-		switch (type){
-		case "personal":
-			this.type = Types.PERSONAL;
-			break;
-		case "truck":
-			this.type = Types.TRUCK;
-			break;
-		default:
-			throw new Exception();
-		}
+		this.type = type;
 		this.km = km;
 		this.yom = yom;
 		this.aveLife = aveLife;
@@ -33,5 +24,11 @@ public class Trans {
 		this.people = people;
 
 	}
+
+	@Override
+	public String toString() {
+		return "Trans [type=" + type + ", km=" + km + ", yom=" + yom + ", aveLife=" + aveLife + ", vin=" + vin + ", wheels=" + wheels + ", hitch=" + hitch + ", people=" + people + "]";
+	}
+	
 
 }
