@@ -1,8 +1,9 @@
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-
 public class Utils {
-	private static Scanner sc = new Scanner(System.in);
+	public static Scanner sc = new Scanner(System.in);
+
 	public static Trans getTransFromInput() {
 		Types type;
 		double km;
@@ -32,7 +33,30 @@ public class Utils {
 
 		return new Trans(type, km, yom, aveLife, vin, wheels, hitch, people);
 	}
-	
+
+	public static void printMenu(){
+		System.out.println("1. add ");
+		System.out.println("2. delete ");
+		System.out.println("3. print ");
+		System.out.println("4. sort ");		
+	}
+	public static void chooseMenu(int op) throws FileNotFoundException {
+		switch (op) {
+		case 1:
+			addCar();
+			break;
+		case 2:
+			delCar();
+			break;
+		case 3:
+			printCars();
+			break;
+		case 4:
+			sort();
+			break;
+		}
+	}
+
 	public static void printCars() {
 		Main.CARN = 1;
 		for (int n = 0; n < Main.ARR.size(); n++) {
@@ -41,12 +65,34 @@ public class Utils {
 			Main.CARN++;
 		}
 	}
+
 	public static void addCar() {
 		try {
 			Main.ARR.add(getTransFromInput());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}
+	}
+
+	public static void delCar() {
+		System.out.println("Enter index of car to delete");
+		Main.ARR.remove(sc.nextInt() - 1);
+	}
+
+	public static void sort() {
+		System.out.println("Enter parameter to sort by(type, wheels, km)");
+		switch (sc.next().toLowerCase()) {
+		case "type":
+			Main.ARR.sort(new Trans.SorterbyType());
+			break;
+		case "wheels":
+			Main.ARR.sort(new Trans.SorterbyWheels());
+			break;
+		case "km":
+			Main.ARR.sort(new Trans.SorterbyKm());
+			break;
+
 		}
 	}
 
