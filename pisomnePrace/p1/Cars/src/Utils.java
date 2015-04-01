@@ -35,10 +35,11 @@ public class Utils {
 	}
 
 	public static void printMenu(){
-		System.out.println("1. add ");
-		System.out.println("2. delete ");
-		System.out.println("3. print ");
-		System.out.println("4. sort ");		
+		System.out.println("1 add ");
+		System.out.println("2 delete ");
+		System.out.println("3 print ");
+		System.out.println("4 sort ");	
+		System.out.println("5 to exit");
 	}
 	public static void chooseMenu(int op) throws FileNotFoundException {
 		switch (op) {
