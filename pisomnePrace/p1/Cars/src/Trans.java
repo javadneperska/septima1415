@@ -2,7 +2,7 @@ import java.util.Date;
 
 public class Trans {
 
-	private String type;
+	private Types type = Types.PERSONAL;
 	private double km;
 	private Date yom;
 	private int aveLife;
@@ -12,9 +12,18 @@ public class Trans {
 	private boolean people;
 
 	public Trans(String type, double km, Date yom, int aveLife, int vin,
-			int wheels, boolean hitch, boolean people) {
+			int wheels, boolean hitch, boolean people) throws Exception {
 		super();
-		this.type = type;
+		switch (type){
+		case "personal":
+			this.type = Types.PERSONAL;
+			break;
+		case "truck":
+			this.type = Types.TRUCK;
+			break;
+		default:
+			throw new Exception();
+		}
 		this.km = km;
 		this.yom = yom;
 		this.aveLife = aveLife;
