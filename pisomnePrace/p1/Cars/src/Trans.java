@@ -58,7 +58,8 @@ public class Trans {
 
 	@Override
 	public String toString() {
-		return "Trans [type=" + type + ", km=" + km + ", yom=" + yom + ", aveLife=" + aveLife + ", vin=" + vin + ", wheels=" + wheels + ", hitch=" + hitch + ", people=" + people + "]";
+		String line = String.format("Car [Type= %-8s Mileage= %-9s km Year of manafacture = %-5s Average life= %-3s VIN= %-12s Number of wheels= %-3s Hitch= %-3s Transports people = %-3s ] %n", type, km,yom,aveLife,vin,wheels, ((hitch) ? "Yes" : "No"), ((people) ? "Yes" : "No"));
+		return line;
 	}
 
 	public final static class SorterbyWheels implements Comparator<Trans> {
