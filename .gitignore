@@ -1,6 +1,8 @@
 # Object file
 *.o
 *.class
+*/target/*
 
 # Ada Library Information
 *.ali
+/pisomnePrace/p1/Cars/target/x.daco
