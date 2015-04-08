@@ -1,4 +1,6 @@
 import java.io.FileNotFoundException;
+import java.util.Calendar;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Utils {
@@ -7,54 +9,122 @@ public class Utils {
 	public static Trans getTransFromInput() {
 		Types type;
 		double km;
-		int yom;
+		int yom = 0;
 		int aveLife;
 		String vin;
 		int wheels;
-		boolean hitch;
-		boolean people;
+		boolean hitch = false;
+		boolean people = false;
+		boolean istrue = false;
 
-		System.out.print("Enter vehicle type:");
-		type = Types.fromString(sc.next());
+		System.out.print("Enter vehicle type (personal / truck):");
+		while ((type = Types.fromString(sc.next())) == null) {
+			System.out.println("Enter personal or truck");
+		}
 		System.out.print("Enter number of km traveled:");
-		km = sc.nextDouble();
+		while (true) {
+			try {
+				km = sc.nextDouble();
+				break;
+			} catch (InputMismatchException e) {
+				System.out.println("Enter a valid number!");
+				sc.next();
+			}
+		}
 		System.out.print("Enter year of manufacture:");
-		yom = sc.nextInt();
+		while (true) {
+			try {
+				yom = sc.nextInt();
+				if ((yom >= Calendar.getInstance().get(Calendar.YEAR)) || (yom < 0)) {
+					System.out.println("Enter a valid year");
+				} else {
+					break;
+				}
+			} catch (InputMismatchException e) {
+				System.out.println("Enter a valid number!");
+				sc.next();
+			}
+		}
 		System.out.print("Enter average life:");
-		aveLife = sc.nextInt();
+		while (true) {
+			try {
+				aveLife = sc.nextInt();
+				break;
+			} catch (InputMismatchException e) {
+				System.out.println("Enter a valid number!");
+				sc.next();
+			}
+		}
 		System.out.print("Enter VIN:");
-		vin = sc.next();
+		vin = sc.next().toUpperCase();
 		System.out.print("Enter number of wheels:");
-		wheels = sc.nextInt();
-		System.out.print("Does the vehicle have hitch?:");
-		hitch = sc.next().startsWith("y");
-		System.out.print("Does the vehicle carry people?:");
-		people = sc.next().startsWith("y");
-
+		while (true) {
+			try {
+				wheels = sc.nextInt();
+				break;
+			} catch (InputMismatchException e) {
+				System.out.println("Enter a valid number!");
+				sc.next();
+			}
+		}
+		System.out.print("Does the vehicle have hitch?(yes / no):");
+		while (!istrue) {
+			switch (sc.next()) {
+			case "yes":
+				hitch = true;
+				istrue = true;
+				break;
+			case "no":
+				istrue = true;
+				break;
+			default:
+				System.out.println("Enter yes or no");
+			}
+		}
+		System.out.print("Does the vehicle carry people?(yes / no):");
+		istrue = false;
+		while (!istrue) {
+			switch (sc.next()) {
+			case "yes":
+				hitch = true;
+				istrue = true;
+				break;
+			case "no":
+				istrue = true;
+				break;
+			default:
+				System.out.println("Enter yes or no");
+			}
+		}
 		return new Trans(type, km, yom, aveLife, vin, wheels, hitch, people);
 	}
 
-	public static void printMenu(){
-		System.out.println("1 add ");
-		System.out.println("2 delete ");
-		System.out.println("3 print ");
-		System.out.println("4 sort ");	
-		System.out.println("5 to exit");
+	public static void printMenu() {
+		System.out.println("add");
+		System.out.println("delete");
+		System.out.println("print");
+		System.out.println("sort");
+		System.out.println("exit");
 	}
-	public static void chooseMenu(int op) throws FileNotFoundException {
+
+	public static void chooseMenu(String op) throws FileNotFoundException {
 		switch (op) {
-		case 1:
+		case "add":
 			addCar();
 			break;
-		case 2:
+		case "delete":
 			delCar();
 			break;
-		case 3:
+		case "print":
 			printCars();
 			break;
-		case 4:
+		case "sort":
 			sort();
 			break;
+		case "exit":
+			System.exit(0);
+		default:
+			System.out.println("Please enter one of the menu options");
 		}
 	}
 

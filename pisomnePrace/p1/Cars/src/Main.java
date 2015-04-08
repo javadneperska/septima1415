@@ -12,12 +12,12 @@ public class Main {
 	public static void main(String[] args) {
 
 		try {
-			int input = 0;
+			String input;
 			ARR = Loading.loadVehicles("vehicles.csv");
-			while(input != 5){
-				Utils.chooseMenu(input);
+			while(true){
 				Utils.printMenu();
-				input = Utils.sc.nextInt();
+				input = Utils.sc.next();
+				Utils.chooseMenu(input);
 			}
 			
 
