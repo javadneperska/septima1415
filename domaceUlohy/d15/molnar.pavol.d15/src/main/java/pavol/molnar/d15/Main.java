@@ -37,7 +37,7 @@ public class Main {
 		}
 		
 		timeInmiliSec= ( System.currentTimeMillis()-start);
-		System.out.println("Time in seconds with buffer: " + timeInmiliSec);
+		System.out.println("Time in miliseconds with buffer: " + timeInmiliSec);
 	
 	}
 	}

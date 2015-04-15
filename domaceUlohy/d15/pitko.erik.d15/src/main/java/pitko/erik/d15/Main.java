@@ -24,7 +24,7 @@ public class Main {
 		start = System.currentTimeMillis();
 		for (int i = 0; i < USERS; i++) {
 			names.concat(person.get(i).getName() + " ");
-			names.concat(person.get(i).getSurname());
+			names.concat(person.get(i).getSurname() + " ");
 			names.concat("\n");
 		}
 		System.out.println("time with concat: " + (double) (System.currentTimeMillis() - start)/1000);
@@ -33,7 +33,7 @@ public class Main {
 		
 		start = System.currentTimeMillis();
 		for (int i = 0; i < USERS; i++) {
-			buff.append(person.get(i).getName() + " ");
+			buff.append(person.get(i).getName());
 			buff.append(person.get(i).getSurname());
 			buff.append("\n");
 		}
