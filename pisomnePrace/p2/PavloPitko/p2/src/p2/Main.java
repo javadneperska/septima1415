@@ -1,5 +1,6 @@
 package p2;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 public class Main {
@@ -49,13 +50,21 @@ public class Main {
 				break;
 			case 5:
 				result = Sorter.sort(x);
-				printResult(result);
+				printResult(x);
 				System.out.println();
 				
 				result = Sorter.sort(y);
 				printResult(result);
 				break;
 			case 6:
+				try {
+					x = file1.loadFile();
+					y = file2.loadFile();
+				} catch (FileNotFoundException e) {
+					e.printStackTrace();
+				}
+				break;
+			case 7:
 				sc.close();
 				System.exit(0);
 			default:
@@ -99,7 +108,8 @@ public class Main {
 		System.out.println("Press #3 to see mult result");
 		System.out.println("Press #4 to see exp result");
 		System.out.println("Press #5 to sort matrix");
-		System.out.println("Press #6 to exit program");
+		System.out.println("Press #6 to load matrixes from file");
+		System.out.println("Press #7 to exit program");
 	}
 
 		
