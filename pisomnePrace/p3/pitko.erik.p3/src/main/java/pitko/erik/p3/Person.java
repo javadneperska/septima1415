@@ -19,8 +19,8 @@ public class Person {
 		this.uuid = UUID.randomUUID();
 		this.name = name;
 		this.surname = surname;
-		this.age = age;
-		DoB = doB;
+		this.age = 18 + rand.nextInt(80 - 18);
+		DoB = 1200 + rand.nextInt(1800 - 1200);
 		
 		ArrayList<Integer> list = new ArrayList<Integer>();
         for (int i=1; i<places.length; i++) {

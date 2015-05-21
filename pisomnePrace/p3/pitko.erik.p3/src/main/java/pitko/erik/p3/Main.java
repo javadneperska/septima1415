@@ -20,7 +20,11 @@ public class Main {
 		try {
 			String people[] = fileNames.loadFile();
 			String placesL[] = filePlaces.loadFile();
-			String places[] = placesL[0].split(",");
+			StringBuffer buff = new StringBuffer();
+			for (int i = 0; i < placesL.length; i++){
+				buff.append(placesL[i]);
+			}
+			String places[] = buff.toString().split(",");
 			
 			for (int i = 0; i < people.length; i++){
 				String[] data = people[i].split(",");

@@ -21,7 +21,7 @@ public class FileUtils {
 		}
 		String[] rows = new String[lines.size()];
 		for (int i = 0; i < lines.size(); i++){
-			rows[i] = lines.get(i);			
+			rows[i] = lines.get(i);
 		}
 		sc.close();
 		return rows;
