@@ -1,0 +1,11 @@
+type, color, material, height, width
+cupboard, brown, WOOD, 1.5, 3
+table, black, WOOD, 2, 2
+rack, yellow, PARTICLEBOARD, 0.8, 1
+drawer, blue, OTHER, 0.5, 0.5
+drawer, red, WOOD, 1.5, 0.57
+table, black, WOOD, 1, 1
+rack, black, WOOD, 2, 0.9
+cupboard, blue, PARTICLEBOARD, 1, 0.9
+table, white, OTHER, 0.4, 0.5
+rack, black, WOOD, 1, 0.4
