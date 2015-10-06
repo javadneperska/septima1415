@@ -10,9 +10,4 @@ public class Student extends Person {
 		this.subjects = subjects;
 	}
 
-	@Override
-	public String toString() {
-		return "Student [subjects=" + subjects + ", name=" + name + ", surname=" + surname + ", sex=" + sex + ", age=" + age + "]";
-	}
-
 }

@@ -11,11 +11,5 @@ public class Teacher extends Person{
 		this.subjects = subjects;
 		this.payPerHour = payPerHour;
 	}
-
-	@Override
-	public String toString() {
-		return "Teacher [subjects=" + subjects + ", payPerHour=" + payPerHour + ", name=" + name + ", surname=" + surname + ", sex=" + sex + ", age=" + age + "]";
-	}
-	
 	
 }
