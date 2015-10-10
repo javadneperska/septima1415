@@ -1,0 +1,9 @@
+Ingrid,Carlisle,45,f,0.5,subjects:Geography-Literacy-English
+Ivane,Mlakar,35,m,1.2,subjects:Literacy-Mathematics
+Orestes,Kovats,46,m,1.1,subjects:Geography-English
+Chizoba,Petran,29,m,0.9,subjects:Geography-History
+Jaci,Hamilton,33,m,1.3,subjects:Mathematics-English
+Marly,Vermeulen,39,f,0.7,subjects:English-History
+Caesarius,Peter,41,m,1,subjects:Mathematics-English
+Alexina,Kalb,36,f,0.75,subjects:Literacy-History
+Sylvia,Bystrom,37,f,0.9,subjects:Mathematics-History

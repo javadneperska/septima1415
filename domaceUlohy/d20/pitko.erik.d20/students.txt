@@ -1,0 +1,8 @@
+Diane,Yale,18,f,subjects:English-History
+William,Neal,19,m,subjects:Mathematics-Literacy
+Joanna,Marcantel,21,f,subjects:Geography-English
+Josef,Macko,18,m,subjects:Geography-History
+Dominic,Norton,21,m,subjects:Literacy-Mathematics
+Kayleigh,Pratt,20,f,subjects:Literacy-History
+Libby,Shaw,17,f,subjects:Mathematics-English
+Katie,Sims,19,f,subjects:Literacy-Mathematics
