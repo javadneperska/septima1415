@@ -1,0 +1,10 @@
+name, surname, age, isMale, subjects
+Maxim, Diachenko, 20, true, english-math
+Juriy, Kovalenko, 18, true, math-physics
+Stanislav, Maly, 19, true, literature-physics
+Robert, Velky, 19, true, english-math
+Martin, Dlhy, 18, true, math-literature
+Martina, Kratka, 21, false, math-physics
+Jevgenyj, Siroky, 20, true, physics-literature
+Nikolaj, Minarovsky, 20, true, english-french
+Marcel, Nizny, 20, true, english-literature

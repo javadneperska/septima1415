@@ -1,0 +1,10 @@
+name, surname, age, isMale, payPerHour, subjects
+John, Wallace, 35, true, 1.5, english-history-geography
+Marcus, Wisley, 28, true, 0.8, english
+Franca, Mosley, 45, false, 1.2, history-math
+Will, Smig, 28, true, 1.4, math-physics
+John, Rowlin, 36, true, 1.9, french
+Philippe, Reisling, 26, true, 2.0, history-geography-math-french
+Michael, Jerome, 35, true, 1.5, literature
+John, Mosley, 35, true, 1.2, math
+John, Manning, 28, true, 2.6, literature-english
