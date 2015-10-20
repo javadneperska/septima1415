@@ -1,0 +1,11 @@
+Diane,Yale,24,VS,lang=English-B2:Spanish-B1:French-A1,81-62-87
+Katie,Neal,22,SS,lang=English-B1:Mandarin-C1:Japanese-B1,85-63-85
+Joanna,Marcantel,25,VS,lang=English-B2:Portuguese-C1,86-65-89
+Maria,Macko,22,SS,lang=English-B1:Russian-C1,79-60-89
+Lucia,Norton,21,SS,lang=Japanese-B2:German-B2,82-60-86
+Kayleigh,Pratt,20,SS,lang=French-B2:Italian-A2,81-61-88
+Libby,Shaw,25,VS,lang=Polish-B2:Turkish-C1:Czech-B2,80-63-87
+Katie,Sims,21,SS,lang=Ukrainian-B2:Dutch-C1:Swedish-A3:Hindi-A1,83-62-85
+Lara,Cooke,25,VS,lang=Japanese-A2:German-C1:Mandarin-A1,82-65-88
+Tegan,Brown,24,SS,lang=Czech-B2:Polish-B1:Slovak-B2,83-64-89
+Tegan,Brown,24,SS,lang=Czech-B2:Polish-B1:Slovak-B2,40-94-19
