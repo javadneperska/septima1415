@@ -31,8 +31,11 @@ public class Miss {
 		@Override
 		public int compare(Miss o1, Miss o2) {
 			int out = o1.getVitalScore() - o2.getVitalScore();
-			if (out <= -3 || out >= 3) {
-				out = o1.getAge() - o2.getAge();
+			if (out <= -5 || out >= 5) {
+				out = o1.getNumofLanguages() - o2.getNumofLanguages();
+				if (out == 0){
+					out = o1.getAge() - o2.getAge();					
+				}
 				if (out == 0) {
 					out = o1.getVzdelanie().compareTo(o2.getVzdelanie());
 				}
@@ -58,6 +61,10 @@ public class Miss {
 		return age;
 	}
 
+	public int getNumofLanguages() {
+		return language.size();
+	}
+
 	public Vzdelanie getVzdelanie() {
 		return vzdelanie;
 	}
@@ -72,7 +79,7 @@ public class Miss {
 
 	@Override
 	public String toString() {
-		return "Miss [name=" + name + ", surname=" + surname + ", age=" + age + ", vzdelanie=" + vzdelanie + ", language=" + language + ", vitalStatistics=" + vitalStatistics + ", vitalScore=" + vitalScore + "]";
+		return "Miss [name=" + name + ", surname=" + surname + ", age=" + age + ", vzdelanie=" + vzdelanie + " number of learnt languages: " + getNumofLanguages() + ", language=" + language + ", vitalStatistics=" + vitalStatistics + ", vitalScore=" + vitalScore + "]";
 	}
 
 	// @Override
